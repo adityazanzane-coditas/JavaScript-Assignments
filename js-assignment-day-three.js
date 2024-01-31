@@ -13,3 +13,9 @@ console.log(typeof fullName);
 console.log(typeof isMarried);
 console.log(typeof height);
 console.log(typeof salary);
+
+//Output
+// string
+// boolean
+// undefined
+// object
