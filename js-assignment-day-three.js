@@ -10,6 +10,6 @@ const salary=null;//null
 //Create file and use the JavaScript typeof operator to check different data types. Check the data type of each variable
 
 console.log(typeof fullName);
-console.log(isMarried);
-console.log(height);
-console.log(salary);
+console.log(typeof isMarried);
+console.log(typeof height);
+console.log(typeof salary);
