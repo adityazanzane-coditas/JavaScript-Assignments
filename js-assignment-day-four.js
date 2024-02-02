@@ -32,4 +32,23 @@ for (let index = 1; index <= 5; index++) {
 const base=10;
 const height=2;
 const area=0.5 * base * height; // formula:- area of triangle = base * height / 2
+<<<<<<< HEAD
 console.log(area);
+=======
+console.log(area);
+
+//Output
+// coditas@Coditass-MacBook-Pro ELTP-JS-Aditya % node js-assignment-day-four.js
+// string
+// 10
+// 9.8
+// 10
+// 7
+// 63
+// 1       1       1       1       1
+// 2       1       2       4       8
+// 3       1       3       9       27
+// 4       1       4       16      64
+// 5       1       5       25      125
+// 10
+>>>>>>> 9b630c5e4b54bb100ce75bde0ff219d529fcd0a6
