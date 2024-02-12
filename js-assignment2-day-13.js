@@ -79,9 +79,38 @@ const lessThanTwoSkillsUsers = users.filter(({ skills }) => skills.length < 2);
 console.log(lessThanTwoSkillsUsers);
 
 // Destructure the countries array print name, capital, population and languages of all countries
-countries.forEach(({ name, capital, population, languages }) => {
-  console.log(name, capital, population, languages);
-});
+const additionalCountriesDetails = [
+  {
+    name: "China",
+    capital: "Beijing",
+    population: 1444216107,
+    languages: ["Mandarin"],
+  },
+  {
+    name: "Brazil",
+    capital: "Brasília",
+    population: 213993437,
+    languages: ["Portuguese"],
+  },
+  {
+    name: "Russia",
+    capital: "Moscow",
+    population: 145912025,
+    languages: ["Russian"],
+  },
+  {
+    name: "Australia",
+    capital: "Canberra",
+    population: 25788222,
+    languages: ["English"],
+  },
+];
+
+additionalCountriesDetails.forEach(
+  ({ name, capital, population, languages }) => {
+    console.log(name, capital, population, languages);
+  }
+);
 
 // 7. Destructure the following array name to name, skills array to skills, scores array to scores, JavaScript score to jsScore and React score to reactScore variable in one line.
 const studentDestructure = [
