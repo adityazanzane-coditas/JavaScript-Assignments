@@ -325,7 +325,7 @@
 
 //map function using array
 
-numbers = [1, 2, 3, 4, 5];
+// numbers = [1, 2, 3, 4, 5];
 
 // const squareNumber = numbers.map((number) => {
 //   return number ** 2;
@@ -341,19 +341,184 @@ numbers = [1, 2, 3, 4, 5];
 // console.log(oddNumbers);
 
 //reduce method
-const maxOfNumbers = numbers.reduce((accumulator, currentValue) => {
-  if (accumulator < currentValue) {
-    return (accumulator = currentValue);
-  }
-}, Number.MIN_VALUE);
-console.log(maxOfNumbers);
+// const maxOfNumbers = numbers.reduce((accumulator, currentValue) => {
+//   if (accumulator < currentValue) {
+//     return (accumulator = currentValue);
+//   }
+// }, Number.MIN_VALUE);
+// console.log(maxOfNumbers);
 
-const minOfNumbers = numbers.reduce((accumulator, currentValue) => {
-  if (accumulator > currentValue) {
-    return (accumulator = currentValue);
-  }
-  return accumulator;
-}, Number.MAX_VALUE);
-console.log(minOfNumbers);
+// const minOfNumbers = numbers.reduce((accumulator, currentValue) => {
+//   if (accumulator > currentValue) {
+//     return (accumulator = currentValue);
+//   }
+//   return accumulator;
+// }, Number.MAX_VALUE);
+// console.log(minOfNumbers);
 
 //forEvery method
+
+//loops
+//for loop
+
+// const person = {
+//   name: "Aditya",
+//   tech: "Js",
+//   height: "6",
+// };
+
+//retrieve the values of object using for loop
+
+// const keysOfPerson = Object.keys(person);
+
+// for (let index = 0; index < keysOfPerson.length; index++) {
+//   console.log(person[keysOfPerson[index]]);
+// }
+
+//for in  loop
+// const numbers = [1, 2, 3, 4, 5];
+// const char = "Aditya";
+
+// for (const number in numbers) {
+//   console.log(numbers[number]);
+// }
+// for (const number of numbers) {
+//   console.log(number);
+// }
+// for (const character of char) {
+//   console.log(character);
+// }
+// for (const character in char) {
+//   console.log(character);
+// }
+
+// function welcome() {
+//   return `to world, ${"Aditya"}`;
+// }
+// console.log(this.welcome());
+
+// const greet = (hello) => {
+//   return `hi, ${"hello"}`;
+// };
+// console.log(greet());
+
+// const hehe = (hello) => {
+//   return `laugh, ${"hello"}`;
+// };
+
+// function greetPerson(name) {
+//   console.log("Hi");
+//   return `Hello, ${name}`;
+// }
+// greetPerson("Akhil");
+
+// const greeting = greetPerson("Akhil");
+// console.log(greeting());
+
+// function squareNumber(number) {
+//   return number * number;
+// }
+// let result1 = squareNumber(5);
+// console.log(result1);
+
+// const squareOfNumber = (num) => num ** 2;
+// let result2 = squareOfNumber(7);
+// console.log(result2);
+
+//In JavaScript, functions are objects (hence the designation of first-class object).
+//JavaScript has all those abilities or features that are required to be a language having First Class Functions,
+//hence functions are treated as First Class Citizens.
+
+//High order function
+//map
+// const add = (number1, number2) => {
+//   return number1 + number2;
+// };
+// const displaySum = (number1, number2) => number1 + number2;
+// console.log(displaySum(5, 6));
+
+// //map
+// const squareNumber = (number) => {
+//   const filterArray = [1, 2, 3, 4];
+//   for (const number in filterArray) {
+//     filterArray[number] = filterArray[number] ** 2;
+//   }
+//   return filterArray;
+// };
+// console.log(squareNumber());
+
+// function customMap(array, callbackFunction) {
+//   const result = [];
+//   for (const index in array) {
+//     const element = array[index];
+//     const modifiedOutput = callbackFunction(index, element, array);
+//     result.push(modifiedOutput);
+//   }
+//   return result;
+// }
+// console.log(
+//   customMap([1, 2, 3, 4, 5], (index, element) => {
+//     console.log(index);
+//     return element ** 2;
+//   })
+// );
+// const addition = (number1, number2) => number1 + number2;
+
+// addition(number1, number2);
+// const number1 = 5;
+// const number2 = 6;
+
+// function multiply(number1) {
+//   const number2 = 6;
+//   const display = function displayResult() {
+//     return number1 * number2;
+//   };
+//   return display();
+// }
+// console.log(multiply(5));
+
+// function addition(number1) {
+//   const number2 = 6;
+//   return (obj = {
+//     result: number1 + number2,
+//     displayResult: (number2) => {
+//       return number1 - number2;
+//     },
+//   });
+//   //   return obj.displayResult(number2);
+// }
+// console.log(addition(1));
+
+//increment
+// function increment(number1) {
+//   const display = function displayResult() {
+//     return ++number1;
+//   };
+//   return display;
+// }
+// const result1 = increment(5);
+// const result2 = increment(10);
+
+// console.log(result1());
+// console.log(result2());
+// console.log(result1());
+// console.log(result2());
+
+//Asynchronus
+//Set time out
+// console.log("Hello");
+// const timeOut = setTimeout(() => console.log("Hello"), 5000);
+// const timeInterval = setInterval(() => console.log("Hello"), 5000);
+// clearTimeout(timeOut);
+// clearInterval(timeInterval);
+// console.log(timeOut);
+
+// setTimeout(() => {
+//   console.log("hi");
+//   setTimeout(() => {
+//     console.log("hi2");
+//   }, 900);
+//   console.log("hi3");
+// }, 1000);
+
+// setTimeout(console.log("Adi"), 1000); error
