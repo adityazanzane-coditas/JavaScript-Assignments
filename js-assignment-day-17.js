@@ -52,3 +52,17 @@ fetch(countriesAPI)
   });
 
 // Read the countries api and count total number of languages in the world used as officials.
+let countOfLanguages = 0;
+fetch(countriesAPI)
+  .then((response) => {
+    return response.json();
+  })
+  .then((data) => {
+    data.forEach((country) => {
+      country.languages.forEach((lang) => {
+        console.log(`   ${lang.name}`);
+        countOfLanguages++;
+      });
+      console.log("Count:", countOfLanguages);
+    });
+  });
